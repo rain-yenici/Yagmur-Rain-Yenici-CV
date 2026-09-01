@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "pm-class"
+assignment: "css-cv"
+owner:
+  username: "rain-yenici"
+  id: 158128169
+  accepted_at: "2026-09-01T17:21:20Z"
+source:
+  owner: "CSCI4300-Web-Programming"
+  owner_id: 212650580
+  repo: "css-cv-template"
+  branch: "main"
