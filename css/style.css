@@ -1,95 +1,302 @@
 body {
-
-  }
+  margin: 0;
+  background-color: #588157;
+}
 
 /****************   Nav Section **********************/
 nav {
-	
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #344e41;
+  font-family: "Georgia" serif;
+  font-variant: small-caps;
+  font-size: 20px;
+  color: #dad7cd;
+  text-align: center;
+  padding: 10px 10px;
+
+}
+
+nav a {
+  text-decoration: none;
+  font-family: "Georgia" serif;
+  font-variant: small-caps;
+  color: #dad7cd;
+}
+
+nav a:hover { 
+  text-decoration: underline; 
 }
 
 /***********************  Footer Section   **************************/
 footer {
-	
+  display: flex;
+	background-color: #344e41;
+  justify-content: center;
+  align-items: center;
+  font-family: "Georgia" serif ;
+  font-variant: small-caps;
+  border-top: 5px solid #1e2e26;
+  font-size: 20px;
+  padding: 10px 10px;
+  padding: 20px;
+  color: #dad7cd;
+}
+
+footer a {
+  text-decoration: none;
+  font-family: "Georgia" serif ;
+  font-variant: small-caps;
+  color: #dad7cd;
+}
+
+footer a:hover { 
+  text-decoration: underline; 
 }
 
 /*********** Splash Page ************************/
 header {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #cac4b2;
+  border-top: 5px solid #1e2e26;
+  border-bottom: 5px solid #1e2e26;
 }
 
 header h1 {
-  
+  font-family: "Georgia" serif ;
+  font-variant: small-caps;
+  color: #1e2e26;
 }
 
 header img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  border: 5px solid #1e2e26;
+}
+
+.info {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #344e41;
+  border-top: 5px solid #1e2e26;
+  border-bottom: 5px solid #1e2e26;
 }
 
 .address {
+  justify-content: center;
+  text-align: center;
+  font-family: "Georgia" serif;
+  font-variant: small-caps;
+  color: #dad7cd;
  
 }
 
 .tagline {
-  
+  justify-content: center;
+  text-align: center;
+  font-family: "Georgia" serif;
+  font-variant: small-caps;
+  color: #dad7cd;
+  padding: 10px;
+  border-bottom: 5px solid #1e2e26;
 }
 
 /************* Sections ********************/
-hr {
-
+hr {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a5a40;
+  margin: 20px 0;
+  font-family: "Georgia" serif;
+  font-variant: small-caps;
+  color: #dad7cd;
 }
 
 section h3 {
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Georgia" serif;
+  font-variant: small-caps;
+  color: #1e2e26;
+}
+
+section h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 10px;
+  background: #cac4b2;
+  border-top: 5px solid #1e2e26;
+  border-bottom: 5px solid #1e2e26;
+  font-family: "Georgia" serif;
+  font-variant: small-caps;
+  font-size: 30px;
+  color: #1e2e26; 
 }
 
 section dl {
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 20px;
+  font-family: "Georgia" serif;
+  font-variant: small-caps;
+  color: #0d1411;
+  font-style: bold;
 }
 
 section ul {
-
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 20px;
+  font-family: "Georgia" serif;
+  font-variant: small-caps;
+  color: #0d1411;
+  font-style: bold;
+  padding: 0px 200px;
+  gap: 10px;
 }
 
 section a {
-
+  text-decoration: none;
+  font-style: italic;
+  color: #82aae7;
 }
 
 section a:hover {
+  text-decoration: underline; 
 }
 
 /**************   Projects   *****************/
 .three-col {
-	
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  gap: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
 }
 
 .card img {
-
+  background: #3a5a40;
+  width: 200px;
+  height: 100px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  margin: 10px;
+  border: 5px solid #1e2e26;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
+  width: 90%;
+  background: #cac4b2;
+  border-radius: 50px;
+  border: 5px solid #1e2e26;
+}
+
+.card ul{
+  padding:50px;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.card h3{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-size: 25px;
+  flex-wrap: wrap;
 }
 
 /**************   Responsiveness   *****************/
 @media (max-width: 680px) {
     nav {
-      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .three-col {
-      
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
     }
 }
 
 /**************   Contact Page   *****************/
 .one-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 20px;
+  gap: 10px;
+  font-family: "Georgia" serif;
+  font-variant: small-caps;
+  color: #dad7cd;
+  font-size: 20px;
+}
 
+h1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  padding: 20px 20px;
+  background-color: #cac4b2;
+  color: #1e2e26;
+  font-family: "Georgia" serif;
+  font-variant: small-caps;
+  border-top: 5px solid #1e2e26;
+  border-bottom: 5px solid #1e2e26;
+}
+
+.cont-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #344e41;
+  border-top: 5px solid #1e2e26;
+  border-bottom: 5px solid #1e2e26;
+  font-family: "Georgia" serif;
+  font-variant: small-caps;
+  color: #dad7cd;
 }
 
 input {
-  
-
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
 }
 
 textarea {
-   
+  width: 100%;
+  max-width: 500px;
+  height: 100px;
+  padding: 10px;
 }
